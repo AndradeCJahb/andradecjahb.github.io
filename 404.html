@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="3;url=/">
   <title>Redirecting to Suduoku</title>
   <style>
     body {
@@ -46,17 +45,25 @@
 <body>
   <div class="container">
     <h1>Sudoku Link Not Found</h1>
-    <p>We're redirecting you back to the main page where you can select another puzzle.</p>
+    <p>We're redirecting you back to the puzzle you were trying to access.</p>
     <div class="progress">
       <div class="progress-bar"></div>
     </div>
     <p>Redirecting in 3 seconds...</p>
-    <p><a href="/">Click here if you're not redirected automatically</a></p>
+    <p><a id="redirect-link" href="/">Click here if you're not redirected automatically</a></p>
   </div>
   <script>
-    // This script will redirect immediately, the meta refresh is a fallback
+    // Extract the original path from the URL
+    const currentPath = window.location.pathname;
+    const redirectPath = `/${currentPath.split('/').slice(2).join('/')}`; // Remove leading slashes for GitHub Pages
+
+    // Update the redirect link
+    const redirectLink = document.getElementById('redirect-link');
+    redirectLink.href = redirectPath;
+
+    // Redirect after 3 seconds
     setTimeout(() => {
-      window.location.href = '/';
+      window.location.href = redirectPath;
     }, 3000);
   </script>
 </body>
