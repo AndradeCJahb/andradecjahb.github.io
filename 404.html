@@ -55,16 +55,29 @@
   <script>
     // Extract the original path from the URL
     const currentPath = window.location.pathname;
-    const redirectPath = `/${currentPath.split('/').slice(2).join('/')}`; // Remove leading slashes for GitHub Pages
 
-    // Update the redirect link
-    const redirectLink = document.getElementById('redirect-link');
-    redirectLink.href = redirectPath;
+    // Check if the user was trying to access a specific puzzle
+    if (currentPath.startsWith('/puzzle/')) {
+      // Redirect back to the same puzzle path
+      const redirectPath = currentPath;
+      const redirectLink = document.getElementById('redirect-link');
+      redirectLink.href = redirectPath;
 
-    // Redirect after 3 seconds
-    setTimeout(() => {
-      window.location.href = redirectPath;
-    }, 3000);
+      // Redirect after 3 seconds
+      setTimeout(() => {
+        window.location.href = redirectPath;
+      }, 3000);
+    } else {
+      // Default to the main page if no specific puzzle path is found
+      const redirectPath = '/';
+      const redirectLink = document.getElementById('redirect-link');
+      redirectLink.href = redirectPath;
+
+      // Redirect after 3 seconds
+      setTimeout(() => {
+        window.location.href = redirectPath;
+      }, 3000);
+    }
   </script>
 </body>
 </html>
