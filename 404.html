@@ -2,82 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Redirecting to Suduoku</title>
+  <title>Redirecting...</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    .container {
-      padding: 30px;
-      background-color: #f5f5f5;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: rgb(112, 155, 208);
-      margin-bottom: 10px;
-    }
-    .progress {
-      height: 4px;
-      background-color: #e0e0e0;
-      margin: 20px auto;
-      border-radius: 2px;
-      width: 80%;
-      overflow: hidden;
-    }
-    .progress-bar {
-      width: 0;
-      height: 100%;
       background-color: rgb(112, 155, 208);
-      animation: progress 3s linear forwards;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    @keyframes progress {
-      0% { width: 0; }
-      100% { width: 100%; }
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 5px solid #FFF;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+    @keyframes rotation {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Sudoku Link Not Found</h1>
-    <p>We're redirecting you back to the puzzle you were trying to access.</p>
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
-    <p>Redirecting in 3 seconds...</p>
-    <p><a id="redirect-link" href="/">Click here if you're not redirected automatically</a></p>
-  </div>
+  <span class="loader"></span>
   <script>
-    // Extract the original path from the URL
-    const currentPath = window.location.pathname;
-
-    // Check if the user was trying to access a specific puzzle
-    if (currentPath.startsWith('/puzzle/')) {
-      // Redirect back to the same puzzle path
-      const redirectPath = currentPath;
-      const redirectLink = document.getElementById('redirect-link');
-      redirectLink.href = redirectPath;
-
-      // Redirect after 3 seconds
-      setTimeout(() => {
-        window.location.href = redirectPath;
-      }, 3000);
-    } else {
-      // Default to the main page if no specific puzzle path is found
-      const redirectPath = '/';
-      const redirectLink = document.getElementById('redirect-link');
-      redirectLink.href = redirectPath;
-
-      // Redirect after 3 seconds
-      setTimeout(() => {
-        window.location.href = redirectPath;
-      }, 3000);
-    }
+    (function() {
+      // Store the current path in sessionStorage
+      const currentPath = window.location.pathname;
+      sessionStorage.setItem('redirectPath', currentPath);
+      
+      // Redirect to home page
+      window.location.replace('/');
+    })();
   </script>
 </body>
 </html>
