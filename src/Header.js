@@ -12,6 +12,7 @@ function Header({ activeSection, setActiveSection }) {
     <header className="header">
       <div className="header-content">
         <h1 className="header-title">Christopher Andrade</h1>
+        <p className="job-title">Software Developer</p>
         <nav className="nav">
           <ul className="nav-list">
             {navigationItems.map((item) => (
