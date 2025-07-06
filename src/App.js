@@ -33,20 +33,23 @@ function App() {
                   <a 
                     href="https://github.com/AndradeCJahb" 
                     target="_blank" 
+                    rel="noopener noreferrer"
                     className="social-button"
                   >
                     GitHub
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/andrade-christopher/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="social-button"
-                    target="_blank" 
                   >
                     LinkedIn
                   </a>
                   <a 
                     href="/Resume.pdf" 
                     target="_blank" 
+                    rel="noopener noreferrer"
                     className="social-button"
                   >
                     Resume
@@ -78,9 +81,9 @@ function App() {
               <p>Software Development Engineer I</p>
             </div>
             <div className="experience-item">
-              <h3>University of Washington Department of Electrical & Computer Engineering</h3>
+              <h3>UW Department of Electrical & Computer Engineering</h3>
               <p>Seattle, WA Sep 2024 - Mar 2025</p>
-              <p>Undergraduate Teaching Assistant: Embedded Systems & Computer Architecture</p>
+              <p>Undergraduate Teaching Assistant: Embedded Sys. & Computer Arch.</p>
             </div>
           </section>
         );
