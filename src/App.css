@@ -1,23 +1,58 @@
-.App {
+/* Global body centering */
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-.main-content {
-  margin-left: 300px;
-  padding: 2rem;
-  flex: 1;
+  justify-content: center;
   background: #33363b;
   min-height: 100vh;
 }
 
-.content-section {
-  max-width: 800px;
+#root {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  justify-content: center;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-content {
+  margin-left: 0;
+  padding: 0;
+  flex: 1;
+  background: #33363b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.content-section {
+  width: 625px;
+  height: 100vh;
+  max-width: 800px;
   background: #24262a;
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-left: 30px;
 }
 
 .content-section h2 {
@@ -172,7 +207,7 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .App {
     flex-direction: column;
     width: 100%;
@@ -246,6 +281,10 @@
 
 .desktop-view {
   display: block;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
 }
 
 .all-sections {

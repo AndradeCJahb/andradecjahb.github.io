@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import NavigationHeader from './Header';
+import { useState } from 'react';
+import NavigationHeader from './header';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
               <div className="about-image-container">
                 <img 
                   src={require('./graduation-photo.jpg')} 
-                  alt="Chris at graduation ceremony" 
+                  alt="Chris" 
                   className="graduation-image"
                 />
               </div>
@@ -67,7 +67,7 @@ function App() {
               <h3>University of Washington</h3>
               <div className="education-header">
                 <span className="degree-details">B.S. Electrical and Computer Engineering</span>
-                <span className="degree-details">2022-2025</span>
+                <span className="degree-details">2022 - 2025</span>
               </div>
               <span className="degree-details">Cum Laude in the College of Engineering</span>
               <p><strong>Concentrations:</strong> Embedded Systems, Computing, VLSI, Computer Architecture</p>
@@ -105,8 +105,10 @@ function App() {
     <div className="App">
       <NavigationHeader activeSection={activeSection} setActiveSection={setActiveSection} />
       <main className="main-content">
-        <div className="desktop-view">
-          {renderContent()}
+        <div className="content-container">
+          <div className="desktop-view">
+            {renderContent()}
+          </div>
         </div>
       </main>
     </div>
