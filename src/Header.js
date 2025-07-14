@@ -1,10 +1,11 @@
-import './header.css';
+import './Header.css';
 
 function Header({ activeSection, setActiveSection }) {
   const navigationItems = [
     { id: 'about', label: 'About' },
     { id: 'education', label: 'Education' },
-    { id: 'experience', label: 'Experience' }
+    { id: 'experience', label: 'Experience' },
+    { id: 'projects', label: 'Projects' },
   ];
 
   return (

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavigationHeader from './header';
+import NavigationHeader from './Header';
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                 />
               </div>
               <div className="about-text">
-                <h3>Hey, I'm Chris,</h3>
+                <h3>Hey, I'm Chris.</h3>
                 <p>
                   I'm a recent graduate from the University of Washington with a B.S. in Electrical and Computer Engineering,
                   and I'll be starting as a Software Development Engineer I at Amazon in August 2025.
@@ -96,6 +96,35 @@ function App() {
             </div>
           </section>
         );
+
+        case 'projects':
+        return (
+          <section className="content-section">
+            <h2>Projects</h2>
+            <div className="project-item">
+              <h3>
+                <a className="project-title" href="https://suduoku.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  Suduoku
+                </a>
+              </h3>
+              <p>
+                Suduoku is a real-time multiplayer Sudoku platform that enables multiple 
+                players to collaboratively solve puzzles with others in real-time.
+              </p>
+              <a className="project-link" href="https://github.com/AndradeCJahb/suduoku-java" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <div className="project-item">
+              <h3>Smart WildFire Defense System</h3>
+                <p>
+                  This comprehensive wildfire detection system combines computer vision, 
+                  sensor data, and weather information to provide real-time fire monitoring 
+                  and automated response capabilities. 
+                </p>
+                <a className="project-link" href="https://github.com/AndradeCJahb/ECE_475" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </section>
+        );
+
       default:
         return null;
     }
