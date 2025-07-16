@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0034d6de.css",
-    "main.js": "/static/js/main.b10ca921.js",
+    "main.css": "/static/css/main.4c427b15.css",
+    "main.js": "/static/js/main.60989cff.js",
     "static/media/graduation-photo.jpg": "/static/media/graduation-photo.85d9e03d3e83aadc8056.jpg",
     "index.html": "/index.html",
-    "main.0034d6de.css.map": "/static/css/main.0034d6de.css.map",
-    "main.b10ca921.js.map": "/static/js/main.b10ca921.js.map"
+    "main.4c427b15.css.map": "/static/css/main.4c427b15.css.map",
+    "main.60989cff.js.map": "/static/js/main.60989cff.js.map"
   },
   "entrypoints": [
-    "static/css/main.0034d6de.css",
-    "static/js/main.b10ca921.js"
+    "static/css/main.4c427b15.css",
+    "static/js/main.60989cff.js"
   ]
 }
