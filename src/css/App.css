@@ -26,19 +26,19 @@ body {
 
 .main-content {
   background: #24262a;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
 .content-container {
-  min-height: 100vh;
+  height: 100%;
   width: 800px;
 }
 
 
 /* Responsive design */
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .App {
     flex-direction: column;
     width: 100%;
@@ -48,7 +48,6 @@ body {
   .main-content {
     width: 100%;
   }
-
 }
 
 /* Mobile-specific styles */

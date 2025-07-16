@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: monospace;
+  font-family: 'Roboto Mono',monospace;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
 }

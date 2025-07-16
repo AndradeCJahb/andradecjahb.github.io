@@ -3,7 +3,6 @@
     color: #ffffff;
     font-size: 3rem;
     font-weight: bold;
-    font-family: monospace;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 30px;
@@ -39,7 +38,6 @@
 .about-text {
     color: #ffffff;
     font-size: 1.25rem;
-    font-family: monospace;
 }
 
 .social-buttons {
@@ -50,17 +48,16 @@
 }
 
 .social-button {
-    display: flex;
-    align-items: center;
+    font-family: monospace;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border: 2px solid #ffffff;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     text-decoration: none;
-    font-weight: 500;
     transition: all 0.3s ease;
-    background: #24262a;
-    font-family: monospace;
+    background: transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .social-button:hover {
@@ -69,26 +66,8 @@
     transform: translateY(-5px);
 }
 
-.social-button.github:hover {
-    background: #333;
-    border-color: #333;
-}
 
-.social-button.linkedin:hover {
-    background: #0077b5;
-    border-color: #0077b5;
-}
-
-.social-button.resume:hover {
-    background: #28a745;
-    border-color: #28a745;
-}
-
-.button-icon {
-    font-size: 1.2rem;
-}
-
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -104,8 +83,4 @@
         justify-content: center;
     }
 
-    .social-button {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
 }
