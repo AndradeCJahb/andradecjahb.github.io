@@ -1,5 +1,5 @@
 import '../css/Header.css';
-
+import Footer from './Footer';
 function Header({ activeSection, setActiveSection }) {
 	const navigationItems = [
 		{ id: 'about', label: 'About' },
@@ -27,6 +27,7 @@ function Header({ activeSection, setActiveSection }) {
 						))}
 					</ul>
 				</nav>
+				<Footer />
 			</div>
 		</header>
 	);

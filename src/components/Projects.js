@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Projects.css';
 
 const Projects = () => (
@@ -7,7 +6,8 @@ const Projects = () => (
 		<div className="project-item">
 			<div className="projects-logo-name">
 				<a href="https://suduoku.vercel.app/" target="_blank" rel="noopener noreferrer">
-					<img src={process.env.PUBLIC_URL + '/suduoku-logo.ico'} alt="Suduoku Logo" className="suduoku-logo" />
+					<img src={process.env.PUBLIC_URL + '/suduoku-logo.ico'} alt="Suduoku Logo" className="suduoku-logo" 
+					/>
 				</a>
 				<h3>Suduoku</h3>				
 			</div>

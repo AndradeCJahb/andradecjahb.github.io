@@ -54,6 +54,11 @@
     width: 75px;
 }
 
+.suduoku-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .project-item ul {
     padding-left: 1.5rem;
     list-style-type: square;

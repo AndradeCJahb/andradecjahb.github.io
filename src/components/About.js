@@ -18,7 +18,7 @@ const About = () => (
 					I'm a recent graduate from the University of Washington with a B.S. in Electrical and Computer Engineering,
 					and I'll be starting as a Software Development Engineer I at Amazon in August 2025.
 				</p>
-				<p>
+				<p style={{ color: '#969696' }}>
 					Outside of coding, you'll often find me practicing Brazilian Ju Jitsu, 
 					weightlifting or bouldering.
 				</p>

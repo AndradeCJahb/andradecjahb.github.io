@@ -64,6 +64,11 @@
     display: block;
 }
 
+.uw-ece-logo-mini:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .amazon-music-logo {
     width: 75px;
     display: block;

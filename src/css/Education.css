@@ -58,6 +58,11 @@
     margin: 1.5rem 0 1rem 0;    
 }
 
+.uw-ece-logo:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
 @media (max-width: 1000px) {
   .education-item li {
     font-size: 1rem;

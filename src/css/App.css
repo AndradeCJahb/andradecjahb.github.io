@@ -36,7 +36,6 @@ body {
   width: 800px;
 }
 
-
 /* Responsive design */
 @media (max-width: 1000px) {
   .App {

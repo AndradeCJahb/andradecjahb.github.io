@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Education.css';
 
 const Education = () => (
@@ -6,8 +5,9 @@ const Education = () => (
 		<div className="education-title">Education</div>
 		
 		<div className="education-item">
-			
-			<img src={process.env.PUBLIC_URL + '/uw-ece-logo.png'} alt="UW ECE Logo" className="uw-ece-logo" />
+			<a href="https://www.ece.uw.edu/" target="_blank" rel="noopener noreferrer">
+				<img src={process.env.PUBLIC_URL + '/uw-ece-logo.png'} alt="UW ECE Logo" className="uw-ece-logo" />
+			</a>
 			<h3>University of Washington</h3>
 			<div className="education-header">
 				<span className="degree-details">B.S. Electrical and Computer Engineering</span>

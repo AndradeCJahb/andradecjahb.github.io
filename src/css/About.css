@@ -45,6 +45,7 @@
     gap: 1rem;
     margin-top: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .social-button {
@@ -55,7 +56,6 @@
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-    background: transparent;
     font-size: 1.1rem;
     font-weight: 500;
 }

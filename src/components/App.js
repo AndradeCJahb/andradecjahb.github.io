@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import NavigationHeader from './Header';
+
+import Header from './Header';
 import '../css/App.css';
 import About from './About';
 import Education from './Education';
@@ -24,16 +25,16 @@ function App() {
 		}
 	};
 
-	return (
-		<div className="App">
-			<NavigationHeader activeSection={activeSection} setActiveSection={setActiveSection} />
-			<main className="main-content">
-				<div className="content-container">
-						{renderContent()}
-				</div>
-			</main>
+  return (
+	<div className="App">
+	  <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+	  <main className="main-content">
+		<div className="content-container">
+			{renderContent()}
 		</div>
-	);
+	  </main>
+	</div>
+  );
 }
 
 export default App;

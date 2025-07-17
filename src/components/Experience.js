@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Experience.css';
 
 const Experience = () => (
@@ -17,7 +16,9 @@ const Experience = () => (
 		</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
-				<img src={process.env.PUBLIC_URL + '/uw-ece-logo-mini.png'} alt="UW Mini ECE Logo" className="uw-ece-logo-mini" />
+				<a href="https://www.ece.uw.edu/" target="_blank" rel="noopener noreferrer">
+					<img src={process.env.PUBLIC_URL + '/uw-ece-logo-mini.png'} alt="UW Mini ECE Logo" className="uw-ece-logo-mini" />
+				</a>
 				<h3>UW Electrical & Computer Engineering</h3>
 			</div>
 
