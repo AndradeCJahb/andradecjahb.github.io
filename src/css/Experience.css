@@ -74,6 +74,12 @@
     display: block;
 }
 
+.amazon-music-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
 @media (max-width: 1000px) {
     .experience-item li {
         font-size: 1rem;
