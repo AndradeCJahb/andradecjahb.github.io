@@ -12,16 +12,18 @@ const About = () => (
 					className="graduation-image"
 				/>
 			</div>
+
 			<div className="about-text">
-				<h3>Hey, I'm Chris.</h3>
+				<h3>Hey, I'm Chris!</h3>
 				<p>
 					I'm a recent graduate from the University of Washington with a B.S. in Electrical and Computer Engineering,
-					and I'll be starting as a Software Development Engineer I at Amazon in August 2025.
+					and I'll be starting as a Software Development Engineer at Amazon Entertainment in August 2025.
 				</p>
 				<p style={{ color: '#969696' }}>
-					Outside of coding, you'll often find me practicing Brazilian Ju Jitsu, 
+					Outside of coding, you'll often find me practicing Brazilian Jiu Jitsu, 
 					weightlifting or bouldering.
 				</p>
+
 				<div className="social-buttons">
 					<a 
 						href="https://github.com/AndradeCJahb" 
@@ -31,6 +33,7 @@ const About = () => (
 					>
 						GitHub
 					</a>
+					
 					<a 
 						href="https://www.linkedin.com/in/andrade-christopher/" 
 						target="_blank"
@@ -39,6 +42,7 @@ const About = () => (
 					>
 						LinkedIn
 					</a>
+
 					<a 
 						href="/Resume.pdf" 
 						target="_blank" 

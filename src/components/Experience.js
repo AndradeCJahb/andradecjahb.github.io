@@ -8,7 +8,7 @@ const Experience = () => (
 				<a href="https://www.aboutamazon.com/what-we-do/entertainment" target="_blank" rel="noopener noreferrer">
 					<img src={process.env.PUBLIC_URL + '/amazon-music-logo.png'} alt="Amazon Music Logo" className="amazon-music-logo" />
 				</a>
-				<h3>Amazon Music</h3>
+				<h3>Amazon Entertainment</h3>
 			</div>
 			<div className="experience-header">
 				<span className="location">Seattle, WA</span>
@@ -33,8 +33,8 @@ const Experience = () => (
 				<li>Hosted 20+ office hours a week to help 80+ students with assignments on RTL design, CPU architecture, and memory systems</li>
 				<li>Evaluated student understanding through verbal reviews of CPU component implementations</li>
 				<li>Evaluated C/C++ programming assignments for 70+ students on the ESP32 microcontroller</li>
-				<li>Assessed student implementations of embedded systems concepts, including interrupt handling, GPIO register manipulation,
-						timer/alarm configuration, and FreeRTOS scheduling</li>
+				<li>Assessed student implementations of embedded systems concepts, including interrupts, GPIO register manipulation,
+					alarm configurations, and RTOS scheduling</li>
 			</ul>
 		</div>
 	</section>
