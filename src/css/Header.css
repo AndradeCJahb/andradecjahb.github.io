@@ -24,14 +24,15 @@
 .header-title {
   font-size: 2rem;
   font-weight: 600;
-  margin: 0 0 0 0;
-  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
   color: white;
 }
 
 .job-title {
   font-size: 1.25rem;
-  text-align: center;
+  text-align: left;
   color: rgb(150, 150, 150);
   margin-top: 0;
 }
@@ -100,16 +101,22 @@
   .header-title {
     font-size: 1.5rem;
     margin: 0 0 1rem 0;
+    text-align: center;
   }
   
   .nav-list {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 0.5rem;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
   }
   
   .nav-button:hover {
     transform: translateY(-2px);
+  }
+
+  .job-title {
+    text-align: center;
   }
 }

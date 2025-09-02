@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/About.css';
 
 const About = () => (
@@ -16,11 +15,11 @@ const About = () => (
 			<div className="about-text">
 				<h3>Hey, I'm Chris!</h3>
 				<p>
-					I'm a recent graduate from the University of Washington with a B.S. in Electrical and Computer Engineering,
-					and I'll be starting as a Software Development Engineer at Amazon Entertainment in August 2025.
-				</p>
+					I currently work as a Software Development Engineer at Amazon Music in Seattle, WA. I graduated from 
+					the University of Washington with a B.S. in Electrical and Computer Engineering.
+				</p> 
 				<p style={{ color: '#969696' }}>
-					Outside of coding, you'll often find me practicing Brazilian Jiu Jitsu, 
+					When I'm not coding, you'll often find me practicing Brazilian Jiu Jitsu, playing the trumpet,
 					weightlifting or bouldering.
 				</p>
 
