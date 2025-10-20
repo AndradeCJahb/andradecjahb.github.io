@@ -12,11 +12,8 @@
     color: #ffffff;
     font-size: 1.25rem;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1px;
-    padding-bottom: 1rem;
-    
+    padding: 1px 1rem 1rem;
+
     background: #33363b;
     border-left: 4px solid #ffffff;
 
@@ -27,12 +24,6 @@
 
 .project-item p {
     margin-top: 0;
-}
-
-.project-title {
-    color: #578fff;
-    text-decoration: none;
-    font-size: 2rem;
 }
 
 .project-link {

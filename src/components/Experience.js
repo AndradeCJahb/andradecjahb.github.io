@@ -5,7 +5,7 @@ const Experience = () => (
 		<div className="experience-title">Experience</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
-				<a href="https://www.aboutamazon.com/what-we-do/entertainment" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.aboutamazon.com/news/entertainment/what-is-amazon-music" target="_blank" rel="noopener noreferrer">
 					<img src={process.env.PUBLIC_URL + '/amazon-music-logo.png'} alt="Amazon Music Logo" className="amazon-music-logo" />
 				</a>
 				<h3>Amazon Music</h3>
@@ -15,6 +15,9 @@ const Experience = () => (
 				<span className="date">2025 - Present</span>
 			</div>
 			<p>Software Development Engineer I</p>
+			<ul>
+				<li>Amazon Music Voice Gateway Team</li>
+			</ul>
 		</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
