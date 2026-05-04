@@ -16,15 +16,15 @@ const Experience = () => (
 			</div>
 			<p>Software Development Engineer I</p>
 			<ul>
-				<li>Amazon Music Voice Gateway Team</li>
+				<li>Alexa/Amazon Music Integration</li>
 			</ul>
 		</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
-				<a href="https://www.ece.uw.edu/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer">
 					<img src={process.env.PUBLIC_URL + '/uw-ece-logo-mini.png'} alt="UW Mini ECE Logo" className="uw-ece-logo-mini" />
 				</a>
-				<h3>UW Electrical & Computer Engineering</h3>
+				<h3>Paul G. Allen School of CSE</h3>
 			</div>
 
 			<div className="experience-header">

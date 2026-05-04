@@ -18,7 +18,6 @@ const Education = () => (
 			<p>Concentrations:</p> 
 			<ul>
 				<li>Embedded Systems</li>
-				<li>Computing</li>
 				<li>Computer Architecture</li>
 				<li>VLSI</li>
 			</ul>
@@ -28,9 +27,9 @@ const Education = () => (
 				<li>Data Structures & Algorithms</li>
 				<li>Computer Architecture</li>
 				<li>Digital Design</li>
-				<li>Embedded Systems Capstone</li>
+				<li>Embedded Systems</li>
 				<li>Database Design</li>
-				<li>VLSI Layout Design</li>
+				<li>VLSI Design</li>
 			</ul>
 		</div>
 	</section>
