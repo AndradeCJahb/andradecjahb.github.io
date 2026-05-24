@@ -32,6 +32,7 @@
     display: block;
 }
 
+/* Mobile-specific styles */
 @media (max-width: 1000px) {
     .footer {
         display: none;

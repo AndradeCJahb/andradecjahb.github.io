@@ -63,7 +63,7 @@
     transform: translateY(-5px);
 }
 
-
+/* Mobile-specific styles */
 @media (max-width: 1000px) {
     .about-content {
         flex-direction: column;
