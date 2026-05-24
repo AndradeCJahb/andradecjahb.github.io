@@ -16,13 +16,15 @@ const Experience = () => (
 			</div>
 			<p>Software Development Engineer I</p>
 			<ul>
-				<li>Alexa/Amazon Music Integration</li>
+				<li>Maintain global voice orchestration services handling 100K+ TPS across major assistant integrations</li>
+				<li>Led region migration using CDK/CloudFormation with VPC updates and cross-region data validation</li>
+				<li>Delivered voice UX backend features in Java Spring; built on AWS ECS, Fargate, Lambda, DDB, SQS, SNS, and S3</li>
 			</ul>
 		</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
 				<a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer">
-					<img src={process.env.PUBLIC_URL + '/uw-ece-logo-mini.png'} alt="UW Mini ECE Logo" className="uw-ece-logo-mini" />
+					<img src={process.env.PUBLIC_URL + '/paul-allen-logo.png'} alt="UW Mini ECE Logo" className="uw-ece-logo-mini" />
 				</a>
 				<h3>Paul G. Allen School of CSE</h3>
 			</div>
@@ -33,14 +35,13 @@ const Experience = () => (
 			</div>
 			<p>Computer Architecture TA</p>
 			<ul>
-				<li>Hosted 20+ office hours a week to help 80+ students with assignments on RTL design, CPU architecture, and memory systems</li>
-				<li>Evaluated student understanding through verbal reviews of CPU component implementations</li>
+				<li>Held 20+ weekly office hours supporting 80+ students in RTL, CPU, and memory fundamentals</li>
+				<li>Reviewed student component implementations via oral exams</li>
 			</ul>
 			<p>Embedded Systems TA</p>
 			<ul>
-				<li>Evaluated C/C++ programming assignments for 70+ students on the ESP32 microcontroller</li>
-				<li>Assessed student implementations of embedded systems concepts, including interrupts, GPIO register manipulation,
-					alarm configurations, and RTOS scheduling</li>
+				<li>Graded C/C++ assignments for 70+ students on the ESP32 microcontroller</li>
+				<li>Assessed core embedded concepts: interrupts, GPIO, timers, and RTOS scheduling</li>
 			</ul>
 		</div>
 	</section>

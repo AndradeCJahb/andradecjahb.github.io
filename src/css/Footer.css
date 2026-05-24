@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
-    background: #24262a;
-    color: #aaa;
+    background: var(--bg-surface);
+    color: var(--text-subtle);
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
@@ -10,6 +10,7 @@
     bottom: 0;
     left: 0;
     z-index: 100;
+    margin-top: auto;
 }
 
 .footer-content {
@@ -18,7 +19,7 @@
 }
 
 .footer-link {
-    color: #578fff;
+    color: var(--accent);
     text-decoration: none;
     font-size: 1rem;
 }

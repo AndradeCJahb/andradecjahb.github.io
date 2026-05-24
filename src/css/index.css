@@ -1,3 +1,42 @@
+:root {
+  color-scheme: dark;
+  --bg-page: #33363b;
+  --bg-surface: #24262a;
+  --bg-card: #33363b;
+  --text-primary: #ffffff;
+  --text-muted: #969696;
+  --text-subtle: #aaa;
+  --accent: #578fff;
+  --border-strong: #ffffff;
+  --border-muted: #ffffff4d;
+  --hover-bg: #ffffff1a;
+  --active-bg: #ffffff33;
+  --shadow: #0000001a;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.25rem;
+  --content-padding: var(--space-xl);
+  --content-gap: var(--space-md);
+  --card-padding: var(--space-md) var(--space-lg);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg-page: #f5f5f7;
+  --bg-surface: #ffffff;
+  --bg-card: #f0f2f5;
+  --text-primary: #1f2328;
+  --text-muted: #57606a;
+  --text-subtle: #6e7781;
+  --accent: #0969da;
+  --border-strong: #30363e;
+  --border-muted: #1f232833;
+  --hover-bg: #1f232814;
+  --active-bg: #1f23281f;
+  --shadow: #00000014;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto Mono',monospace;

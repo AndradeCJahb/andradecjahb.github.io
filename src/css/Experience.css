@@ -1,25 +1,21 @@
 /* Experience section styles */
 .experience-title {
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 30px;
+    margin: 0;
 }
 
 .experience-item {
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 1.25rem;
 
-    padding: 1px 1rem 1rem;
+    padding: var(--card-padding);
 
-    background: #33363b;
-    border-left: 4px solid #ffffff;
+    background: var(--bg-card);
+    border-left: 4px solid var(--border-strong);
 
-    margin-bottom: 1rem;
-    margin-left: 30px;
-    margin-right: 30px
+    margin: 0;
 }
 
 .experience-header {
@@ -27,14 +23,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 1rem;
 }
 
 .date, .location{
     font-style: italic;
     font-size: 1rem;
-    color: rgb(150, 150, 150);  
+    color: var(--text-muted);  
 }
 
 .experience-item ul {
@@ -44,8 +40,8 @@
 }
 
 .experience-item li {
-    padding-bottom: 1rem;
-    color: rgb(150, 150, 150);  
+    padding-bottom: var(--content-gap);
+    color: var(--text-muted);  
 }
 
 

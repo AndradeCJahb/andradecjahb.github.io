@@ -4,11 +4,11 @@
   left: 0;
   width: 300px;
   height: 100%;
-  background: #24262a;
-  color: white;
+  background: var(--bg-surface);
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 10px var(--shadow);
   z-index: 1000;
   flex-shrink: 0;
   margin-right: 30px;
@@ -26,18 +26,17 @@
   font-weight: 600;
     margin: 0 0 10px;
     text-align: left;
-  color: white;
+  color: var(--text-primary);
 }
 
 .job-title {
   font-size: 1.25rem;
   text-align: left;
-  color: rgb(150, 150, 150);
+  color: var(--text-muted);
   margin-top: 0;
 }
 
 .nav {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -60,8 +59,8 @@
   width: 100%;
   padding: 1rem 1.5rem;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: white;
+  border: 2px solid var(--border-muted);
+  color: var(--text-primary);
   font-size: 1.1rem;
   font-weight: 500;
   font-family: monospace;
@@ -73,15 +72,47 @@
 }
 
 .nav-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: var(--hover-bg);
+  border-color: var(--border-strong);
   transform: translateX(5px);
 }
 
 .nav-button.active {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: white;
+  background: var(--active-bg);
+  border-color: var(--border-strong);
   font-weight: 600;
+}
+
+.theme-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.theme-toggle-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  border: 2px solid var(--border-muted);
+  background: transparent;
+  color: var(--text-primary);
+  font-family: monospace;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-icon:hover {
+  background: var(--hover-bg);
+  border-color: var(--border-strong);
+}
+
+.theme-toggle-icon:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Responsive design */
@@ -89,8 +120,8 @@
   .header {
     width: 100%;
     height: auto;
-    background: #24262a;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background: var(--bg-surface);
+    border-bottom: 2px solid var(--border-muted);
   }
   
   .header-content {
