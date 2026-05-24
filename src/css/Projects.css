@@ -1,69 +1,69 @@
 /* Projects section styles */
 .projects-title {
-    color: var(--text-primary);
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
+  color: var(--text-primary);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .project-item {
-    color: var(--text-primary);
-    font-size: 1.25rem;
+  color: var(--text-primary);
+  font-size: 1.25rem;
 
-    padding: var(--card-padding);
+  padding: var(--card-padding);
 
-    background: var(--bg-card);
-    border-left: 4px solid var(--border-strong);
+  background: var(--bg-card);
+  border-left: 4px solid var(--border-strong);
 
-    margin: 0;
+  margin: 0;
 }
 
 .project-item p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .project-link {
-    color: var(--accent);
-    text-decoration: none;
-    font-size: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.projects-logo-name{
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.projects-logo-name {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .suduoku-logo {
-    margin-top: 10px;
-    width: 75px;
+  margin-top: 10px;
+  width: 75px;
 }
 
 .suduoku-logo:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .project-item ul {
-    padding-left: 1.5rem;
-    list-style-type: square;
-    margin-bottom: 0;
+  padding-left: 1.5rem;
+  list-style-type: square;
+  margin-bottom: 0;
 }
 
 .project-item li {
-    padding-bottom: var(--content-gap);
-    color: var(--text-muted);  
+  padding-bottom: var(--content-gap);
+  color: var(--text-muted);
 }
 
 /* Mobile-specific styles */
 @media (max-width: 1000px) {
-    .project-item li {
-        font-size: 1rem;
-        padding-bottom: 0;
-    }
+  .project-item li {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
 
-    .project-item p {
-        font-size: 1rem;
-    }
+  .project-item p {
+    font-size: 1rem;
+  }
 }

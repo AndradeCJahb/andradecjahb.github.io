@@ -1,59 +1,59 @@
 /* Education section styles */
 .education-title {
-    color: var(--text-primary);
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
+  color: var(--text-primary);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .education-item {
-    color: var(--text-primary);
-    font-size: 1.25rem;
+  color: var(--text-primary);
+  font-size: 1.25rem;
 
-    padding: var(--card-padding);
+  padding: var(--card-padding);
 
-    background: var(--bg-card);
-    border-left: 4px solid var(--border-strong);
+  background: var(--bg-card);
+  border-left: 4px solid var(--border-strong);
 
-    margin: 0;
+  margin: 0;
 }
 
 .education-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-size: 1rem;
 }
 
 .degree-details {
-    font-style: italic;
-    font-size: 1rem;
-    color: var(--text-muted);  
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
 }
 
 .education-item ul {
-    padding-left: 1.5rem;
-    list-style-type: square;
-    margin-bottom: 0;
-    columns: 2;
+  padding-left: 1.5rem;
+  list-style-type: square;
+  margin-bottom: 0;
+  columns: 2;
 }
 
 .education-item li {
-    padding-bottom: var(--content-gap);
-    color: var(--text-muted);  
+  padding-bottom: var(--content-gap);
+  color: var(--text-muted);
 }
 
 .uw-ece-logo {
-    width: 100%;
-    display: block;
-    margin: var(--content-padding) 0 var(--content-gap) 0;    
+  width: 100%;
+  display: block;
+  margin: var(--content-padding) 0 var(--content-gap) 0;
 }
 
 .uw-ece-logo:hover {
-    transform: scale(1.03);
-    transition: transform 0.3s ease;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 /* Mobile-specific styles */

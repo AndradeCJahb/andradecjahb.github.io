@@ -21,7 +21,7 @@
   --section-gap: 33rem;
 }
 
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   color-scheme: light;
   --bg-page: #f5f5f7;
   --bg-surface: #ffffff;
@@ -38,13 +38,13 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto Mono',monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
 }

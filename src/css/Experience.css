@@ -1,80 +1,81 @@
 /* Experience section styles */
 .experience-title {
-    color: var(--text-primary);
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
+  color: var(--text-primary);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .experience-item {
-    color: var(--text-primary);
-    font-size: 1.25rem;
+  color: var(--text-primary);
+  font-size: 1.25rem;
 
-    padding: var(--card-padding);
+  padding: var(--card-padding);
 
-    background: var(--bg-card);
-    border-left: 4px solid var(--border-strong);
+  background: var(--bg-card);
+  border-left: 4px solid var(--border-strong);
 
-    margin: 0;
+  margin: 0;
 }
 
 .experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-size: 1rem;
 }
 
-.date, .location{
-    font-style: italic;
-    font-size: 1rem;
-    color: var(--text-muted);  
+.date,
+.location {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
 }
 
 .experience-item ul {
-    padding-left: 1.5rem;
-    list-style-type: square;
-    margin-bottom: 0;
+  padding-left: 1.5rem;
+  list-style-type: square;
+  margin-bottom: 0;
 }
 
 .experience-item li {
-    padding-bottom: var(--content-gap);
-    color: var(--text-muted);  
+  padding-bottom: var(--content-gap);
+  color: var(--text-muted);
 }
 
-.experience-logo-name{
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.experience-logo-name {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .uw-ece-logo-mini {
-    width: 75px;
-    display: block;
+  width: 75px;
+  display: block;
 }
 
 .uw-ece-logo-mini:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .amazon-music-logo {
-    width: 75px;
-    display: block;
+  width: 75px;
+  display: block;
 }
 
 .amazon-music-logo:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 /* Mobile-specific styles */
 @media (max-width: 1000px) {
-    .experience-item li {
-        font-size: 1rem;
-        padding-bottom: 0;
-    }
+  .experience-item li {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
 }
