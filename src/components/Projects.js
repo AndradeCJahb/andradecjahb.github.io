@@ -1,7 +1,7 @@
 import '../css/Projects.css';
 
 const Projects = () => (
-	<section className="content-section">
+	<section className="content-section" id="projects">
 		<div className="projects-title">Projects</div>
 		<div className="project-item">
 			<div className="projects-logo-name">

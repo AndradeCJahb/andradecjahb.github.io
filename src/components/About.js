@@ -1,7 +1,7 @@
 import '../css/About.css';
 
 const About = () => (
-	<section className="content-section">
+	<section className="content-section" id="about">
 		<div className="about-title">About</div>
 		<div className="about-content">
 			<div className="about-image-container">

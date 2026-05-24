@@ -10,7 +10,6 @@
   --border-strong: #ffffff;
   --border-muted: #ffffff4d;
   --hover-bg: #ffffff1a;
-  --active-bg: #ffffff33;
   --shadow: #0000001a;
   --space-sm: 0.5rem;
   --space-md: 0.75rem;
@@ -19,6 +18,7 @@
   --content-padding: var(--space-xl);
   --content-gap: var(--space-md);
   --card-padding: var(--space-md) var(--space-lg);
+  --section-gap: 33rem;
 }
 
 :root[data-theme='light'] {
@@ -33,7 +33,6 @@
   --border-strong: #30363e;
   --border-muted: #1f232833;
   --hover-bg: #1f232814;
-  --active-bg: #1f23281f;
   --shadow: #00000014;
 }
 

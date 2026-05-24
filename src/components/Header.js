@@ -16,7 +16,7 @@ const getInitialTheme = () => {
   return prefersDark ? 'dark' : 'light';
 };
 
-function Header({ activeSection, setActiveSection }) {
+function Header() {
 	const [theme, setTheme] = useState(getInitialTheme);
 	const nextTheme = theme === 'dark' ? 'light' : 'dark';
 	const nextThemeIcon = nextTheme === 'light' ? '☀' : '☾';
@@ -33,6 +33,40 @@ function Header({ activeSection, setActiveSection }) {
 		{ id: 'projects', label: 'Projects' },
 	];
 
+	const getScrollContainer = () => {
+		if (!window.matchMedia('(max-width: 1000px)').matches) {
+			return null;
+		}
+		return document.querySelector('.main-content');
+	};
+
+	const getScrollTop = (scroller, target, sectionId) => {
+		if (sectionId === 'about') {
+			return 0;
+		}
+
+		const targetTop = target.getBoundingClientRect().top;
+		const scrollMarginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+
+		if (scroller === window) {
+			return window.scrollY + targetTop - scrollMarginTop;
+		}
+
+		const scrollerTop = scroller.getBoundingClientRect().top;
+		return scroller.scrollTop + (targetTop - scrollerTop) - scrollMarginTop;
+	};
+
+	const handleScroll = (sectionId) => {
+		const target = document.getElementById(sectionId);
+
+		const scroller = getScrollContainer() ?? window;
+
+		scroller.scrollTo({
+			top: getScrollTop(scroller, target, sectionId),
+			behavior: 'smooth',
+		});
+	};
+
 	return (
 		<header className="header">
 			<div className="header-content">
@@ -43,8 +77,9 @@ function Header({ activeSection, setActiveSection }) {
 						{navigationItems.map((item) => (
 							<li key={item.id} className="nav-item">
 								<button
-									className={`nav-button ${activeSection === item.id ? 'active' : ''}`}
-									onClick={() => setActiveSection(item.id)}
+									className="nav-button"
+									type="button"
+									onClick={() => handleScroll(item.id)}
 								>
 									{item.label}
 								</button>

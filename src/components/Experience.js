@@ -1,7 +1,7 @@
 import '../css/Experience.css';
 
 const Experience = () => (
-	<section className="content-section">
+	<section className="content-section" id="experience">
 		<div className="experience-title">Experience</div>
 		<div className="experience-item">
 			<div className="experience-logo-name">
@@ -16,8 +16,8 @@ const Experience = () => (
 			</div>
 			<p>Software Development Engineer I</p>
 			<ul>
-				<li>Maintain global voice orchestration services handling 100K+ TPS across major assistant integrations</li>
-				<li>Led region migration using CDK/CloudFormation with VPC updates and cross-region data validation</li>
+				<li>Maintain Voice orchestration services handling 100K+ TPS across major voice assistant integrations</li>
+				<li>Aided in region migration using CDK/CloudFormation with VPC updates and cross-region data validation</li>
 				<li>Delivered voice UX backend features in Java Spring; built on AWS ECS, Fargate, Lambda, DDB, SQS, SNS, and S3</li>
 			</ul>
 		</div>

@@ -1,9 +1,8 @@
 .header {
-  position: relative;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 300px;
-  height: 100%;
+  height: 100vh;
   background: var(--bg-surface);
   color: var(--text-primary);
   display: flex;
@@ -12,6 +11,7 @@
   z-index: 1000;
   flex-shrink: 0;
   margin-right: 30px;
+  align-self: flex-start;
 }
 
 .header-content {
@@ -77,12 +77,6 @@
   transform: translateX(5px);
 }
 
-.nav-button.active {
-  background: var(--active-bg);
-  border-color: var(--border-strong);
-  font-weight: 600;
-}
-
 .theme-toggle-container {
   display: flex;
   justify-content: center;
@@ -122,22 +116,26 @@
     height: auto;
     background: var(--bg-surface);
     border-bottom: 2px solid var(--border-muted);
+    position: sticky;
+    top: 0;
   }
   
   .header-content {
-    padding: 1rem;
+    padding: 0.5rem 0.75rem;
+    position: relative;
   }
   
   .header-title {
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    margin: 0 0 0.35rem 0;
     text-align: center;
+    padding: 0 2.5rem;
   }
   
   .nav-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 0.5rem;
+    gap: 0.35rem;
     justify-content: left;
     flex-wrap: wrap;
   }
@@ -148,5 +146,25 @@
 
   .job-title {
     text-align: center;
+    margin-bottom: 0.35rem;
+    padding: 0 2.5rem;
+  }
+
+  .nav-button {
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .theme-toggle-container {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    margin-top: 0;
+  }
+
+  .theme-toggle-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
   }
 }

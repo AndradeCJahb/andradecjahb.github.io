@@ -1,7 +1,7 @@
 import '../css/Education.css';
 
 const Education = () => (
-	<section className="content-section">
+	<section className="content-section" id="education">
 		<div className="education-title">Education</div>
 		
 		<div className="education-item">
